@@ -33,3 +33,6 @@ This folder contains the code used to process the data in /data to generate nump
  
 #### /src/optimization
 The optimization problem is implemented in /src/optimization/heterogeneous_optimization.py. The pickled output dictionaries containing the results of the experiments are stored in /src/optimization/save.
+
+#### /src/plotting
+This folder contains all of the code used to generate the plots in the project manuscript. 
