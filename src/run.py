@@ -1,4 +1,4 @@
-from optimization.covid_gurobi_region_quad_fun_sparse_quad_infect_cost_entity_same import gurobi_solver
+from optimization.heterogeneous_optimization import gurobi_solver
 from params_config import params
 from utils.tester import Tester
 
