@@ -1,0 +1,46 @@
+% This file was created by tikzplotlib v0.9.8.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.0313725490196078,0.188235294117647,0.419607843137255}
+\definecolor{color1}{rgb}{0.0932718185313341,0.396878123798539,0.673663975394079}
+\definecolor{color2}{rgb}{0.381776239907728,0.656516724336794,0.824452133794694}
+\definecolor{color3}{rgb}{0.64236831987697,0.801830065359477,0.890319108035371}
+\definecolor{color4}{rgb}{0.968627450980392,0.984313725490196,1}
+
+\begin{axis}[
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={Economic Impact Parameter},
+xmin=-0.475, xmax=4.475,
+xtick style={color=black},
+xtick={0,1,2,3,4},
+xticklabels={0.01,0.02,0.04,0.08,0.20},
+y grid style={white!69.0196078431373!black},
+ylabel={Average Lockdown},
+ymin=0, ymax=0.141318193611784,
+ytick style={color=black}
+]
+\draw[draw=black,fill=color0] (axis cs:-0.25,0) rectangle (axis cs:0.25,0.134588755820747);
+\addlegendimage{ybar,ybar legend,draw=black,fill=color0};
+\addlegendentry{Regular cost}
+
+\draw[draw=black,fill=color1] (axis cs:0.75,0) rectangle (axis cs:1.25,0.11236102629815);
+\addlegendimage{ybar,ybar legend,draw=black,fill=color1};
+\addlegendentry{2x cost}
+
+\draw[draw=black,fill=color2] (axis cs:1.75,0) rectangle (axis cs:2.25,0.0833796788598324);
+\addlegendimage{ybar,ybar legend,draw=black,fill=color2};
+\addlegendentry{4x cost}
+
+\draw[draw=black,fill=color3] (axis cs:2.75,0) rectangle (axis cs:3.25,0.0648458566635143);
+\addlegendimage{ybar,ybar legend,draw=black,fill=color3};
+\addlegendentry{8x cost}
+
+\draw[draw=black,fill=color4] (axis cs:3.75,0) rectangle (axis cs:4.25,0.0258546429701645);
+\addlegendimage{ybar,ybar legend,draw=black,fill=color4};
+\addlegendentry{20x cost}
+
+\end{axis}
+
+\end{tikzpicture}

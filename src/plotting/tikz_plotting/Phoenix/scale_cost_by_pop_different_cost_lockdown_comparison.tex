@@ -1,0 +1,31 @@
+% This file was created by tikzplotlib v0.9.1.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+
+\begin{axis}[
+log basis x={10},
+tick align=outside,
+tick pos=both,
+x grid style={white!69.0196078431373!black},
+xlabel={Economic Impact Parameter},
+xmin=8.31566529016915e-06, xmax=0.000481019841518735,
+xmode=log,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={Average Lockdown Rate},
+ymin=0.0238963674844633, ymax=0.285695673575574,
+ytick style={color=black}
+]
+\addplot [semithick, color0, mark=diamond*, mark size=3, mark options={solid}]
+table {%
+1e-05 0.273795705116887
+2e-05 0.239949315611298
+5e-05 0.185997387876427
+0.0001 0.152083762310191
+0.0002 0.109485290655661
+0.0004 0.0357963359431501
+};
+\end{axis}
+
+\end{tikzpicture}

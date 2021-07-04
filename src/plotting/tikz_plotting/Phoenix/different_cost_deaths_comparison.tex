@@ -1,0 +1,30 @@
+% This file was created by tikzplotlib v0.9.1.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+
+\begin{axis}[
+log basis x={10},
+tick align=outside,
+tick pos=both,
+x grid style={white!69.0196078431373!black},
+xlabel={Economic Impact Parameter},
+xmin=0.00860891659331735, xmax=0.232317269928308,
+xmode=log,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={Deaths per 100,000},
+ymin=0.295069255022848, ymax=0.970098888169289,
+ytick style={color=black}
+]
+\addplot [semithick, color0, mark=diamond*, mark size=3, mark options={solid}]
+table {%
+0.01 0.325752420165868
+0.02 0.361373001132622
+0.04 0.516752461431602
+0.08 0.597757884253777
+0.2 0.939415723026269
+};
+\end{axis}
+
+\end{tikzpicture}

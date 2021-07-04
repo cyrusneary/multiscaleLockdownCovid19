@@ -1,0 +1,53 @@
+% This file was created by tikzplotlib v0.9.8.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.968627450980392,0.984313725490196,1}
+\definecolor{color1}{rgb}{0.802306805074971,0.876047673971549,0.945866974240677}
+\definecolor{color2}{rgb}{0.391864667435602,0.663406382160707,0.828389081122645}
+\definecolor{color3}{rgb}{0.0313725490196078,0.188235294117647,0.419607843137255}
+
+\begin{axis}[
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xmin=-0.425, xmax=3.425,
+xtick style={color=black},
+xtick={0,1,2,3},
+xticklabels={
+  Heterogeneous 
+ Lockdown 
+ Strategies,
+  Regional 
+ Lockdown 
+ Strategies,
+  Activity Site 
+ Lockdown 
+ Strategies,
+  MSA 
+ Lockdown 
+ Strategies
+},
+y grid style={white!69.0196078431373!black},
+ylabel={Average Lockdown},
+ymin=0, ymax=0.42888588664871,
+ytick style={color=black}
+]
+\draw[draw=black,fill=color0] (axis cs:-0.25,0) rectangle (axis cs:0.25,0.134588755820747);
+\addlegendimage{ybar,ybar legend,draw=black,fill=color0};
+\addlegendentry{Fully Targeted Lockdown}
+
+\draw[draw=black,fill=color1] (axis cs:0.75,0) rectangle (axis cs:1.25,0.194391850226258);
+\addlegendimage{ybar,ybar legend,draw=black,fill=color1};
+\addlegendentry{Lockdown fixed for entities}
+
+\draw[draw=black,fill=color2] (axis cs:1.75,0) rectangle (axis cs:2.25,0.277629120808117);
+\addlegendimage{ybar,ybar legend,draw=black,fill=color2};
+\addlegendentry{Lockdown fixed for cities}
+
+\draw[draw=black,fill=color3] (axis cs:2.75,0) rectangle (axis cs:3.25,0.408462749189248);
+\addlegendimage{ybar,ybar legend,draw=black,fill=color3};
+\addlegendentry{Lockdown fixed for all}
+
+\end{axis}
+
+\end{tikzpicture}

@@ -1,0 +1,35 @@
+% This file was created by tikzplotlib v0.9.1.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.498039215686275,0.152941176470588,0.0156862745098039}
+\definecolor{color1}{rgb}{0.999138792772011,0.947866205305652,0.896593617839293}
+\definecolor{color2}{rgb}{1,0.96078431372549,0.92156862745098}
+
+\begin{axis}[
+tick align=outside,
+tick pos=both,
+x grid style={white!69.0196078431373!black},
+xmin=-0.375, xmax=2.375,
+xtick style={color=black},
+xtick={0,1,2},
+xticklabels={3,4,5},
+y grid style={white!69.0196078431373!black},
+ylabel={Infections per 100,000},
+ymin=0, ymax=4.59594269550146,
+ytick style={color=black}
+]
+\draw[draw=black,fill=color0] (axis cs:-0.25,0) rectangle (axis cs:0.25,4.37708828142996);
+\addlegendimage{ybar,ybar legend,draw=black,fill=color0};
+\addlegendentry{3 edges}
+
+\draw[draw=black,fill=color1] (axis cs:0.75,0) rectangle (axis cs:1.25,2.99792326861452);
+\addlegendimage{ybar,ybar legend,draw=black,fill=color1};
+\addlegendentry{4 edges}
+
+\draw[draw=black,fill=color2] (axis cs:1.75,0) rectangle (axis cs:2.25,2.95599893829934);
+\addlegendimage{ybar,ybar legend,draw=black,fill=color2};
+\addlegendentry{5 edges}
+
+\end{axis}
+
+\end{tikzpicture}
